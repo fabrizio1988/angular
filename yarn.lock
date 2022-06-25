@@ -1180,6 +1180,23 @@
     source-map-support "0.5.9"
     tsutils "2.27.2"
 
+"@bazel/typescript@5.5.1":
+  version "5.5.1"
+  resolved "https://registry.yarnpkg.com/@bazel/typescript/-/typescript-5.5.1.tgz#2a30107f7d0b16ef486a473f204b1ffc72c4d28b"
+  integrity sha512-5CZROZMOsu4m4VZ39oZOd23XBzVg1YyJLy7rYknfJ+cNiEO8beOy+fuCw39MietN6eNEj0YyPqNaRc5B1hs/xw==
+  dependencies:
+    "@bazel/worker" "5.5.1"
+    semver "5.6.0"
+    source-map-support "0.5.9"
+    tsutils "3.21.0"
+
+"@bazel/worker@5.5.1":
+  version "5.5.1"
+  resolved "https://registry.yarnpkg.com/@bazel/worker/-/worker-5.5.1.tgz#1927143f144f22ed569eece22eb14b724e7c10a9"
+  integrity sha512-3KmFRqEL/rMwKeFMZL5oCi2JbdqbO0TpJ4S+yMznjKUJ+YcwWMj1kF9/PVPD3rinBGtgQdg4EMg7zG9YF/tgWg==
+  dependencies:
+    google-protobuf "^3.6.1"
+
 "@bcoe/v8-coverage@^0.2.3":
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
@@ -6629,6 +6646,11 @@ google-p12-pem@^3.0.3:
   integrity sha512-tjf3IQIt7tWCDsa0ofDQ1qqSCNzahXDxdAGJDbruWqu3eCg5CKLYKN+hi0s6lfvzYZ1GDVr+oDF9OOWlDSdf0A==
   dependencies:
     node-forge "^0.10.0"
+
+google-protobuf@^3.6.1:
+  version "3.20.1"
+  resolved "https://registry.yarnpkg.com/google-protobuf/-/google-protobuf-3.20.1.tgz#1b255c2b59bcda7c399df46c65206aa3c7a0ce8b"
+  integrity sha512-XMf1+O32FjYIV3CYu6Tuh5PNbfNEU5Xu22X+Xkdb/DUexFlCzhvv7d5Iirm4AOwn8lv4al1YvIhzGrg2j9Zfzw==
 
 got@^9.6.0:
   version "9.6.0"
@@ -13315,17 +13337,17 @@ tsutils@2.27.2:
   dependencies:
     tslib "^1.8.1"
 
+tsutils@3.21.0, tsutils@^3.0.0, tsutils@^3.21.0:
+  version "3.21.0"
+  resolved "https://registry.yarnpkg.com/tsutils/-/tsutils-3.21.0.tgz#b48717d394cea6c1e096983eed58e9d61715b623"
+  integrity sha512-mHKK3iUXL+3UF6xL5k0PEhKRUBKPBCv/+RkEOpjRWxxx27KKRBmmA60A9pgOUvMi8GKhRMPEmjBRPzs2W7O1OA==
+  dependencies:
+    tslib "^1.8.1"
+
 tsutils@^2.29.0:
   version "2.29.0"
   resolved "https://registry.yarnpkg.com/tsutils/-/tsutils-2.29.0.tgz#32b488501467acbedd4b85498673a0812aca0b99"
   integrity sha512-g5JVHCIJwzfISaXpXE1qvNalca5Jwob6FjI4AoPlqMusJ6ftFE7IkkFoMhVLRgK+4Kx3gkzb8UZK5t5yTTvEmA==
-  dependencies:
-    tslib "^1.8.1"
-
-tsutils@^3.0.0, tsutils@^3.21.0:
-  version "3.21.0"
-  resolved "https://registry.yarnpkg.com/tsutils/-/tsutils-3.21.0.tgz#b48717d394cea6c1e096983eed58e9d61715b623"
-  integrity sha512-mHKK3iUXL+3UF6xL5k0PEhKRUBKPBCv/+RkEOpjRWxxx27KKRBmmA60A9pgOUvMi8GKhRMPEmjBRPzs2W7O1OA==
   dependencies:
     tslib "^1.8.1"
 
